@@ -1,0 +1,28 @@
+- name: Bitterling
+  price: 900
+  time: -1
+  months:
+    - [11, 12, 1, 2, 3]
+    - [5, 6, 7, 8, 9]
+  location: River
+  size: Smallest
+- name: Pale Chub
+  price: 160
+  time:
+    - [900, 1500]
+  months: -1
+  location: River
+  size: Smallest
+- name: Crucian Carp
+  price: 160
+  time: -1
+  months: -1
+  location: River
+  size: Smallest
+- name: Dace
+  price: 240
+  time:
+    - [1500, 900]
+  months: -1
+  location: River
+  size: Medium

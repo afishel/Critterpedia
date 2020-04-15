@@ -1,0 +1,151 @@
+.page.-details {
+  .app__header,
+  .app__footer {
+    border: none;
+  }
+
+  .app__content {
+    display: grid;
+  }
+}
+
+.critter__details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas:
+    "display activity"
+    "display price";
+  width: 100%;
+  max-width: 58em;
+  height: 100%;
+  margin: auto;
+
+  &,
+  > * {
+    border: 1px solid var(--color-primary-70);
+  }
+
+  .display {
+    display: flex;
+    grid-area: display;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .tag__container {
+      position: absolute;
+      bottom: calc(var(--gutter) * 2);
+    }
+  }
+
+  .activity {
+    display: flex;
+    grid-area: activity;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: var(--gutter);
+  }
+
+  .price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: price;
+  }
+
+  .bells {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.75em;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 2.75rem;
+      height: 2.75rem;
+      margin-right: 0.3em;
+      background: url('/img/bell.png');
+      background-size: cover;
+    }
+  }
+
+  .months {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0;
+    margin: 0;
+    border: 1px solid var(--color-primary-70);
+    list-style: none;
+  }
+
+  .month {
+    padding: 0.25em;
+    border: 1px solid var(--color-primary-70);
+    text-align: center;
+
+    span {
+      display: block;
+      padding: 0.3rem 0.5rem;
+      font-size: 1.75em;
+      font-style: italic;
+      font-weight: 700;
+    }
+
+    &.-active {
+      span {
+        border-radius: 0.25em;
+        background: #CDD30D;
+      }
+    }
+  }
+
+  .meter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 2em;
+    border-bottom: 2px solid #000;
+    position: relative;
+  }
+
+  .hour {
+    width: 0;
+    height: 25%;
+    border-left: 1px solid #000;
+    position: relative;
+    z-index: 1;
+
+    &.-eighth {
+      height: 50%;
+    }
+
+    &.-quarter {
+      height: 100%;
+    }
+  }
+
+  .activeTime {
+    $hour: percentage(1 / 24);
+    $i: 0;
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #CDD30D;
+
+    @while $i < 25 {
+      &.start-#{$i * 100} {
+        left: #{$hour * $i};
+      }
+
+      &.span-#{$i * 100} {
+        width: #{$hour * $i};
+      }
+
+      $i: $i + 1;
+    }
+  }
+}

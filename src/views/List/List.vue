@@ -1,8 +1,16 @@
 <template>
-  <div>
-    <h1>List</h1>
-    <router-link :to="{ name: 'Pictures' }">Pictures</router-link> |
-    <router-link :to="{ name: 'Details' }">Details</router-link>
+  <div class="-list">
+    <app-header>
+      <app-navigation/>
+    </app-header>
+    <main class="app__content">
+      <ul class="critters -grid">
+        <li class="critter__item" v-for="critter in critters" :key="critter.name">
+          <critter :critter="critter" />
+        </li>
+      </ul>
+    </main>
+    <app-footer/>
   </div>
 </template>
 

@@ -1,0 +1,14 @@
+.critters.-grid {
+  --critter-size: 9rem;
+  --critter-rows: 5;
+
+  display: grid;
+  grid-template-rows: repeat(var(--critter-rows), var(--critter-size));
+  grid-auto-columns: var(--critter-size);
+  grid-auto-flow: column;
+  height: calc(var(--critter-size) * var(--critter-rows));
+  padding: 0;
+  margin: calc(var(--gutter) * 3) calc(var(--gutter) * 4);
+  border: 1px solid var(--color-primary-25);
+  list-style: none;
+}

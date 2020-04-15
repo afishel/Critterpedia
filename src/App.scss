@@ -1,0 +1,44 @@
+@import './assets/sass/config/config.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app,
+.page {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  line-height: 1.3;
+  font-family: 'Nunito', sans-serif;
+  color: var(--color-primary);
+}
+
+#app {
+  position: relative;
+  background: url('/img/lightpaperfibers.jpg');
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  line-height: 1;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 7.5rem 1fr 7.5rem;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+}

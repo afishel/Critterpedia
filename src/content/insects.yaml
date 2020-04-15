@@ -1,0 +1,46 @@
+- name: Common Butterfly
+  price: 160
+  time:
+    - [400, 1900]
+  months:
+    - [1, 2, 3, 4, 5, 6, 9, 10, 11, 12]
+    - [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  location: Flying
+- name: Yellow Butterfly
+  price: 160
+  time:
+    - [400, 1900]
+  months:
+    - [3, 4, 5, 6, 9, 10]
+    - [3, 4, 9, 10, 11, 12]
+  location: Flying
+- name: Tiger Butterfly
+  price: 240
+  time:
+    - [400, 1900]
+  months:
+    - [3, 4, 5, 6, 7, 8, 9]
+    - [9, 10, 11, 12, 1, 2, 3]
+  location: Flying
+- name: Peacock Butterfly
+  price: 2500
+  time:
+    - [400, 1900]
+  months:
+    - [3, 4, 5, 6]
+    - [9, 10, 11, 12]
+  location: Flying near hybrid flowers
+- name: Common Bluebottle
+  price: 300
+  time:
+    - [400, 1900]
+  months:
+    - [4, 5, 6, 7, 8]
+    - [10, 11, 12, 1, 2]
+  location: Flying
+- name: Paper Kite Butterfly
+  price: 1000
+  time:
+    - [800, 1900]
+  months: -1
+  location: Flying
