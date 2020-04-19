@@ -22,7 +22,8 @@
 - name: Dace
   price: 240
   time:
-    - [1500, 900]
+    - [0, 900]
+    - [1500, 2400]
   months: -1
   location: River
   size: Medium

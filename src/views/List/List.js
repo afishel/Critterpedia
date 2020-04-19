@@ -3,6 +3,7 @@ import appHeader from '../../components/Header/Header.vue';
 import appFooter from '../../components/Footer/Footer.vue';
 import appNavigation from '../../components/Navigation/Navigation.vue';
 import critter from '../../components/Critter/Critter.vue';
+import vButton from '../../components/Button/Button.vue';
 
 export default {
   name: 'List',
@@ -11,6 +12,7 @@ export default {
     appFooter,
     appNavigation,
     critter,
+    vButton,
   },
   computed: {
     ...mapState(['critters']),
@@ -19,5 +21,9 @@ export default {
     return {
       focused: false,
     };
+  },
+  methods: {
+    showFilters() {},
+    showPictures() {},
   },
 };

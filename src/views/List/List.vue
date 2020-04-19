@@ -10,7 +10,10 @@
         </li>
       </ul>
     </main>
-    <app-footer/>
+    <app-footer>
+      <v-button text="Filter" char="F" :code="70" @click="showFilters" />
+      <!-- <v-button text="Display Pictures" char="X" :code="88" @click="showPictures" /> -->
+    </app-footer>
   </div>
 </template>
 

@@ -1,7 +1,6 @@
 <template>
   <footer class="app__footer">
-    <v-button text="Filter" char="F" :code="70" @click="showFilters" />
-    <v-button text="Display Pictures" char="X" :code="88" @click="showPictures" />
+    <slot/>
   </footer>
 </template>
 

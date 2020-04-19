@@ -21,13 +21,18 @@ export default new Vuex.Store({
     fish,
     insects,
     critters: [],
+    date: new Date(),
   },
   mutations: {
     updateCritters(state, payload) { state.critters = payload; },
+    updateDate(state, payload) { state.date = payload; },
     updateHemisphere(state, payload) { state.hemisphere = payload; },
     updateType(state, payload) { state.type = payload; },
   },
   actions: {
+    changeDate({ commit }, payload) {
+      commit('updateDate', payload || new Date());
+    },
     changeHemisphere({ commit }, payload) {
       commit('updateHemisphere', hemispheres[payload] || NORTHERN_HEMISPHERE);
     },
