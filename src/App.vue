@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <router-view class="page"/>
+    <filters v-show="showFilters" />
   </div>
 </template>
 

@@ -1,4 +1,4 @@
-import { mapState } from 'vuex';
+import { mapState, mapActions } from 'vuex';
 import appHeader from '../../components/Header/Header.vue';
 import appFooter from '../../components/Footer/Footer.vue';
 import appNavigation from '../../components/Navigation/Navigation.vue';
@@ -23,7 +23,7 @@ export default {
     };
   },
   methods: {
-    showFilters() {},
+    ...mapActions(['changeShowFilters']),
     showPictures() {},
   },
 };

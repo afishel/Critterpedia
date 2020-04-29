@@ -1,10 +1,14 @@
 import { mapState, mapActions } from 'vuex';
 import EventBus from './utils/event-bus';
+import Filters from './views/Filters/Filters.vue';
 
 export default {
   name: 'App',
+  components: {
+    Filters,
+  },
   computed: {
-    ...mapState(['date', 'type']),
+    ...mapState(['date', 'showFilters', 'type']),
   },
   methods: {
     ...mapActions(['changeDate', 'filterCritters']),
