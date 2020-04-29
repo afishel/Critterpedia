@@ -20,10 +20,26 @@ export default {
   data() {
     return {
       focused: false,
+      position: 0,
+      start: 0,
+      width: 0,
     };
   },
   methods: {
     ...mapActions(['changeShowFilters']),
     showPictures() {},
+    scroll(e) {
+      this.position += e.deltaX * -1;
+      // this.position += (e.shiftKey ? e.deltaX : e.deltaY) * -1;
+      this.position = Math.min(Math.max(this.width, this.position), 0);
+    },
+  },
+  beforeMount() {
+    window.addEventListener('wheel', this.scroll);
+  },
+  mounted() {
+    this.start = this.$refs.grid.offsetLeft;
+    this.width = (this.$refs.grid.scrollWidth - this.$refs.grid.offsetWidth) * -1;
+    // this.width = this.$refs.grid.scrollWidth;
   },
 };

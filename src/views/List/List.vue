@@ -3,8 +3,12 @@
     <app-header>
       <app-navigation/>
     </app-header>
-    <main class="app__content">
-      <ul class="critters -grid">
+    <main class="app__content" ref="container">
+      <ul
+        class="critters -grid"
+        ref="grid"
+        :style="`transform: translateX(${position}px);`"
+      >
         <li class="critter__item" v-for="critter in critters" :key="critter.name">
           <critter :critter="critter" />
         </li>
