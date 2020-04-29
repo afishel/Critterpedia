@@ -4,10 +4,9 @@
     :to="{ name: 'Details', params: { id: critter.name } }">
     <tag :text="critter.name" />
     <img
-      src="/img/critters/insects/common-butterfly.png"
+      :src="`/img/critters/${critter.name}.png`"
       :alt="critter.name"
-      width="242"
-      height="179" />
+      :key="critter.name"/>
     <span class="price">{{ critter.price.toLocaleString() }}</span>
   </router-link>
 </template>

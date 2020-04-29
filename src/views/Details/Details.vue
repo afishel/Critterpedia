@@ -5,8 +5,9 @@
       <div class="critter__details">
         <div class="display">
           <img
-            src="/img/critters/insects/common-butterfly.png"
-            :alt="`photo of ${critter.name}`" />
+            :src="`/img/critters/${critter.name}.png`"
+            :alt="`photo of ${critter.name}`"
+            :key="critter.name" />
           <tag :text="critter.name" />
         </div>
         <div class="activity">
