@@ -34,12 +34,22 @@ export default {
       this.position = Math.min(Math.max(this.width, this.position), 0);
     },
   },
+  watch: {
+    critters: {
+      immediate: true,
+      handler() {
+        this.position = 0;
+        this.$nextTick(() => {
+          this.start = this.$refs.grid.offsetLeft;
+          this.width = (this.$refs.grid.scrollWidth - this.$refs.grid.offsetWidth) * -1;
+        });
+      },
+    },
+  },
+  beforeDestroy() {
+    window.removeEventListener('wheel', this.scroll);
+  },
   beforeMount() {
     window.addEventListener('wheel', this.scroll);
-  },
-  mounted() {
-    this.start = this.$refs.grid.offsetLeft;
-    this.width = (this.$refs.grid.scrollWidth - this.$refs.grid.offsetWidth) * -1;
-    // this.width = this.$refs.grid.scrollWidth;
   },
 };

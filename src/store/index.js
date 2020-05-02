@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
+import isEqual from 'lodash.isequal';
 import {
   INSECT,
   FISH,
@@ -76,6 +77,7 @@ export default new Vuex.Store({
         hours,
         type,
       } = state;
+      const origState = state.critters;
       let critters;
       if (type === INSECT) critters = insects;
       if (type === FISH) critters = fish;
@@ -121,7 +123,9 @@ export default new Vuex.Store({
         });
       }
 
-      commit('updateCritters', critters);
+      if (!isEqual(critters, origState)) {
+        commit('updateCritters', critters);
+      }
     },
   },
   modules: {
