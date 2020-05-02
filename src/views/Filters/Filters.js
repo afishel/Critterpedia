@@ -3,6 +3,7 @@ import InputBells from '../../components/Input/Bells/Bells.vue';
 import InputHours from '../../components/Input/Hours/Hours.vue';
 import InputMonths from '../../components/Input/Months/Months.vue';
 import hours from '../../utils/hours';
+import eventBus from '../../utils/event-bus';
 
 export default {
   name: 'Filters',
@@ -46,6 +47,9 @@ export default {
   },
   methods: {
     ...mapActions(['changeBells', 'changeHours', 'changeShowFilters']),
+    checkKey(code) {
+      if (code === 27) this.close();
+    },
     close() {
       this.changeShowFilters(false);
     },
@@ -90,8 +94,10 @@ export default {
   },
   beforeDestroy() {
     window.removeEventListener('mouseup', this.stopDragging);
+    eventBus.$off('keyup', this.checkKey);
   },
   beforeMount() {
     window.addEventListener('mouseup', this.stopDragging);
+    eventBus.$on('keyup', this.checkKey);
   },
 };
