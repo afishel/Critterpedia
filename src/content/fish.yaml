@@ -6,14 +6,14 @@
   months:
     - [11, 12, 1, 2, 3]
     - [5, 6, 7, 8, 9]
-- name: Pale chub
+- name: Pale Chub
   price: 200
   location: River
   size: 1
   time:
     - [900, 1600]
   months: -1
-- name: Crucian carp
+- name: Crucian Carp
   price: 160
   location: River
   size: 2
@@ -47,14 +47,14 @@
   size: 1
   time: -1
   months: -1
-- name: Pop-eyed goldfish
+- name: Pop-eyed Goldfish
   price: 1300
   location: Pond
   size: 1
   time:
     - [900, 1600]
   months: -1
-- name: Ranchu goldfish
+- name: Ranchu Goldfish
   price: 4500
   location: Pond
   size: 2
@@ -77,7 +77,7 @@
   months:
     - [4, 5, 6, 7, 8, 9]
     - [1, 2, 3, 10, 11, 12]
-- name: Soft-shelled turtle
+- name: Soft-shelled Turtle
   price: 3750
   location: River
   size: 4
@@ -87,7 +87,7 @@
   months:
     - [8, 9]
     - [2, 3]
-- name: Snapping turtle
+- name: Snapping Turtle
   price: 5000
   location: River
   size: 5
@@ -113,7 +113,7 @@
   months:
     - [5, 6, 7, 8]
     - [1, 2, 11, 12]
-- name: Freshwater goby
+- name: Freshwater Goby
   price: 400
   location: River
   size: 2
@@ -139,7 +139,7 @@
   months:
     - [5, 6, 7, 8, 9, 10]
     - [1, 2, 3, 4, 11, 12]
-- name: Giant snakehead
+- name: Giant Snakehead
   price: 5500
   location: Pond
   size: 5
@@ -372,7 +372,7 @@
   months:
     - [6, 7, 8, 9]
     - [1, 2, 3, 12]
-- name: Saddled bichir
+- name: Saddled Bichir
   price: 4000
   location: River
   size: 4
@@ -390,7 +390,7 @@
   months:
     - [1, 2, 3, 9, 10, 11, 12]
     - [3, 4, 5, 6, 7, 8, 9]
-- name: Sea butterfly
+- name: Sea Butterfly
   price: 1000
   location: Sea
   size: 1
@@ -398,7 +398,7 @@
   months:
     - [1, 2, 3, 12]
     - [6, 7, 8, 9]
-- name: Sea horse
+- name: Sea Horse
   price: 1100
   location: Sea
   size: 1
@@ -406,7 +406,7 @@
   months:
     - [4, 5, 6, 7, 8, 9, 10, 11]
     - [1, 2, 3, 4, 5, 10, 11, 12]
-- name: Clown fish
+- name: Clown Fish
   price: 650
   location: Sea
   size: 1
@@ -422,7 +422,7 @@
   months:
     - [4, 5, 6, 7, 8, 9]
     - [1, 2, 3, 10, 11, 12]
-- name: Butterly fish
+- name: Butterly Fish
   price: 1000
   location: Sea
   size: 2
@@ -439,7 +439,7 @@
   months:
     - [7, 8]
     - [1, 2]
-- name: Zebra turkeyfish
+- name: Zebra Turkeyfish
   price: 500
   location: Sea
   size: 3
@@ -457,7 +457,7 @@
   months:
     - [1, 2, 11, 12]
     - [5, 6, 7, 8]
-- name: Puffer fish
+- name: Puffer Fish
   price: 250
   location: Sea
   time: -1
@@ -470,13 +470,13 @@
   time:
     - [400, 2100]
   months: -1
-- name: Horse mackerel
+- name: Horse Mackerel
   price: 150
   location: Sea
   size: 2
   time: -1
   months: -1
-- name: Barred knifejaw
+- name: Barred Knifejaw
   price: 5000
   location: Sea
   size: 3
@@ -484,13 +484,13 @@
   months:
     - [3, 4, 5, 6, 7, 8, 9, 10, 11]
     - [1, 2, 3, 4, 5, 9, 10, 11, 12]
-- name: Sea bass
+- name: Sea Bass
   price: 400
   location: Sea
   size: 5
   time: -1
   months: -1
-- name: Red snapper
+- name: Red Snapper
   price: 3000
   location: Sea
   size: 4
@@ -504,7 +504,7 @@
   months:
     - [1, 2, 3, 4, 10, 11, 12]
     - [4, 5, 6, 7, 8, 9, 10]
-- name: Olive flounder
+- name: Olive Flounder
   price: 800
   location: Sea
   size: 5
@@ -518,7 +518,7 @@
   months:
     - [1, 2, 3, 4, 5, 6, 7, 8, 12]
     - [1, 2, 6, 7, 8, 9, 10, 11, 12]
-- name: Moray eel
+- name: Moray Eel
   price: 200
   location: Sea
   size: 0
@@ -526,7 +526,7 @@
   months:
     - [8, 9, 10]
     - [2, 3, 4]
-- name: Ribbon eel
+- name: Ribbon Eel
   price: 600
   location: Sea
   size: 0
@@ -542,7 +542,7 @@
   months:
     - [1, 2, 3, 4, 11, 12]
     - [5, 6, 7, 8, 9, 10]
-- name: Blue marlin
+- name: Blue Marlin
   price: 10000
   location: Pier
   size: 6
@@ -550,7 +550,7 @@
   months:
     - [1, 2, 3, 4, 7, 8, 9, 11, 12]
     - [1, 2, 3, 5, 6, 7, 8, 9, 10]
-- name: Giant trevally
+- name: Giant Trevally
   price: 4500
   location: Pier
   size: 5
@@ -566,7 +566,7 @@
   months:
     - [5, 6, 7, 8, 9, 10]
     - [1, 2, 3, 4, 11, 12]
-- name: Ocean sunfish
+- name: Ocean Sunfish
   price: 4000
   location: Sea
   size: 7
@@ -584,7 +584,7 @@
   months:
     - [8, 9, 10, 11]
     - [2, 3, 4, 5]
-- name: Saw shark
+- name: Saw Shark
   price: 12000
   location: Sea
   size: 7
@@ -594,7 +594,7 @@
   months:
     - [6, 7, 8, 9]
     - [1, 2, 3, 12]
-- name: Hammerhead shark
+- name: Hammerhead Shark
   price: 8000
   location: Sea
   size: 7
@@ -604,7 +604,7 @@
   months:
     - [6, 7, 8, 9]
     - [1, 2, 3, 12]
-- name: Great white shark
+- name: Great White Shark
   price: 15000
   location: Sea
   size: 7
@@ -614,7 +614,7 @@
   months:
     - [6, 7, 8, 9]
     - [1, 2, 3, 12]
-- name: Whale shark
+- name: Whale Shark
   price: 13000
   location: Sea
   size: 7
@@ -630,7 +630,7 @@
   months:
     - [6, 7, 8, 9]
     - [1, 2, 3, 12]
-- name: Football fish
+- name: Football Fish
   price: 2500
   location: Sea
   size: 4
