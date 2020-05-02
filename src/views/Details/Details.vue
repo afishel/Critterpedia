@@ -1,5 +1,5 @@
 <template>
-  <div class="-details">
+  <div class="-details" :class="`-${type.toLowerCase()}`">
     <app-header/>
     <main class="app__content">
       <div class="critter__details">
@@ -26,7 +26,7 @@
             </ol>
           </div>
           <div class="hours">
-            <h2>Active Hours</h2>
+            <h2>Current Active Hours</h2>
             <div class="meter" :style="`--currentTime: ${time}`">
               <div
                 class="hour"
@@ -51,6 +51,10 @@
                 v-else></div>
             </div>
           </div>
+        </div>
+        <div class="location">
+          <h2>Location</h2>
+          <span>{{ critter.location }}</span>
         </div>
         <div class="price">
           <span class="bells">{{ critter.price.toLocaleString() }}</span>

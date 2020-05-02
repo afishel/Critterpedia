@@ -27,6 +27,14 @@ body {
   background: url('/img/lightpaperfibers.jpg');
 }
 
+h2 {
+  display: inline-block;
+  padding: 0 0.3em;
+  font-style: italic;
+  color: var(--color-heading);
+  background-color: var(--color-heading-background);
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -36,7 +44,7 @@ img {
 .page {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 7.5rem 1fr 7.5rem;
+  grid-template-rows: var(--header-height) 1fr var(--footer-height);
   grid-template-areas:
     "header"
     "content"

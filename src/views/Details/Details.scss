@@ -4,6 +4,11 @@
     border: none;
   }
 
+  .app__content {
+    margin-top: calc((var(--header-height) - var(--gutter)) * -1);
+    margin-bottom: calc((var(--footer-height) - var(--gutter)) * -1);
+  }
+
   .navigate__action {
     position: absolute;
     top: 50%;
@@ -20,15 +25,61 @@
       right: 0;
     }
   }
+
+  &.-insect {
+    .critter__details {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 2fr 0.5fr 0.5fr;
+      grid-template-areas:
+        "display activity"
+        "display location"
+        "display price";
+
+      .tag__container {
+        bottom: calc(var(--gutter) * 2);
+      }
+    }
+
+    .display {
+      align-items: flex-start;
+    }
+
+    .activity {
+      flex-direction: column;
+    }
+  }
+
+  &.-fish {
+    .critter__details {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 2fr auto auto;
+      grid-template-areas:
+        "display display"
+        "activity activity"
+        "location price";
+
+      .tag__container {
+        top: var(--gutter);
+      }
+    }
+
+    .display {
+      align-items: flex-end;
+    }
+
+    .activity {
+      flex-direction: row;
+    }
+
+    .seasonality,
+    .hours {
+      margin: 0 var(--gutter);
+    }
+  }
 }
 
 .critter__details {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 2fr 1fr;
-  grid-template-areas:
-    "display activity"
-    "display price";
   width: 100%;
   max-width: 58em;
   height: 100%;
@@ -42,22 +93,49 @@
   .display {
     display: flex;
     grid-area: display;
-    align-items: center;
     justify-content: center;
     position: relative;
 
+    img {
+      width: 100%;
+      height: calc(100% - var(--header-height));
+      max-height: 100%;
+      object-fit: scale-down;
+    }
+
     .tag__container {
       position: absolute;
-      bottom: calc(var(--gutter) * 2);
     }
   }
 
   .activity {
     display: flex;
     grid-area: activity;
-    flex-direction: column;
     justify-content: space-evenly;
     padding: var(--gutter);
+  }
+
+  .seasonality,
+  .hours {
+    flex: 1 1 auto;
+  }
+
+  .location {
+    display: flex;
+    grid-area: location;
+    align-items: center;
+    padding: var(--gutter);
+
+    h2 {
+      margin: 0;
+    }
+
+    span {
+      margin-left: var(--gutter);
+      font-size: 1.25em;
+      font-style: italic;
+      font-weight: 700;
+    }
   }
 
   .price {

@@ -1,5 +1,5 @@
 import { mapState } from 'vuex';
-import { NORTHERN_HEMISPHERE } from '../../utils/types';
+import { NORTHERN_HEMISPHERE, FISH, INSECT } from '../../utils/types';
 import appHeader from '../../components/Header/Header.vue';
 import appFooter from '../../components/Footer/Footer.vue';
 import icon from '../../components/Icon/Icon.vue';
@@ -57,6 +57,10 @@ export default {
       const current = second + minute + hour;
       return current / fullDay;
     },
+    type() {
+      if (this.fish.find((critter) => critter.name === this.id)) return FISH;
+      return INSECT;
+    },
   },
   data() {
     return {
@@ -66,6 +70,7 @@ export default {
   },
   methods: {
     checkKey(code) {
+      if (code === 27) this.showAll();
       if (code === 39 || code === 68) this.goNext();
       if (code === 37 || code === 65) this.goPrevious();
     },

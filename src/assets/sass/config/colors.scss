@@ -26,6 +26,12 @@
   --color-shades-darkest-brightness: 0%;
   --color-shades-darkest: hsla(var(--color-shades-darkest-hue), var(--color-shades-darkest-saturation), var(--color-shades-darkest-brightness), 1);
 
+  --color-heading-hue: 82;
+  --color-heading-saturation: 52%;
+  --color-heading-brightness: 28%;
+  --color-heading: hsla(var(--color-heading-hue), var(--color-heading-saturation), var(--color-heading-brightness), 1);
+  --color-heading-background: hsla(var(--color-heading-hue), var(--color-heading-saturation), var(--color-heading-brightness), 0.2);
+
   --navigation-background: var(--color-shades-lightest);
   --navigation-color: var(--color-primary);
   --navigation-active-background: var(--color-shades-lightest);
