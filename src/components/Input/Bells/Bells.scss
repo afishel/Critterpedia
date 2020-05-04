@@ -1,0 +1,49 @@
+.filters__bells {
+  .range {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 0.75em;
+    position: relative;
+    border-radius: 2em;
+    background: var(--color-primary);
+
+    &__active {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: var(--color-secondary);
+    }
+
+    .step {
+      flex: 1;
+      position: relative;
+      z-index: 1;
+    }
+
+    .handle {
+      width: 2.25rem;
+      height: 2.25rem;
+      border: none;
+      background: var(--color-secondary);
+      position: absolute;
+      top: 50%;
+      left: 0;
+      z-index: 2;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      color: var(--color-primary);
+      cursor: move;
+
+      span {
+        margin-top: 0.2em;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

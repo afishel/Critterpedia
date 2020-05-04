@@ -1,0 +1,53 @@
+.filters__months {
+  .months {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0;
+    margin: 0;
+    border: 1px solid var(--color-primary-70);
+    list-style: none;
+
+    &.-disabled {
+      opacity: 0.5;
+    }
+  }
+
+  .month {
+    padding: 0.25em;
+    border: 1px solid var(--color-primary-70);
+    position: relative;
+    text-align: center;
+
+    input {
+      position: absolute;
+      opacity: 0;
+    }
+
+    label {
+      display: block;
+      padding: 0.3rem 0.5rem;
+      font-size: 1.75em;
+      font-style: italic;
+      font-weight: 700;
+    }
+
+    &.-active {
+      label {
+        border-radius: 0.25em;
+        background: #CDD30D;
+      }
+    }
+
+    &.-current {
+      &::before {
+        content: '';
+        width: calc(100% + 2px);
+        height: calc(100% + 2px);
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        border: 2px solid red;
+      }
+    }
+  }
+}

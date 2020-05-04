@@ -1,0 +1,11 @@
+.app__footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--gutter);
+  border-top: 2px solid var(--color-primary-70);
+
+  .button {
+    margin-left: var(--gutter);
+  }
+}

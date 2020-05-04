@@ -1,0 +1,39 @@
+:root {
+  --color-primary-hue: 35;
+  --color-primary-saturation: 14%;
+  --color-primary-brightness: 45%;
+  --color-primary: hsla(var(--color-primary-hue), var(--color-primary-saturation), var(--color-primary-brightness), 1);
+  --color-primary-70: hsla(var(--color-primary-hue), var(--color-primary-saturation), var(--color-primary-brightness), 0.7);
+  --color-primary-25: hsla(var(--color-primary-hue), var(--color-primary-saturation), var(--color-primary-brightness), 0.25);
+
+  --color-secondary-hue: 45;
+  --color-secondary-saturation: 86%;
+  --color-secondary-brightness: 67%;
+  --color-secondary: hsla(var(--color-secondary-hue), var(--color-secondary-saturation), var(--color-secondary-brightness), 1);
+
+  --color-tertiary-hue: 55;
+  --color-tertiary-saturation: 64%;
+  --color-tertiary-brightness: 92%;
+  --color-tertiary: hsla(var(--color-tertiary-hue), var(--color-tertiary-saturation), var(--color-tertiary-brightness), 1);
+
+  --color-shades-lightest-hue: 0;
+  --color-shades-lightest-saturation: 0%;
+  --color-shades-lightest-brightness: 100%;
+  --color-shades-lightest: hsla(var(--color-shades-lightest-hue), var(--color-shades-lightest-saturation), var(--color-shades-lightest-brightness), 1);
+
+  --color-shades-darkest-hue: 0;
+  --color-shades-darkest-saturation: 0%;
+  --color-shades-darkest-brightness: 0%;
+  --color-shades-darkest: hsla(var(--color-shades-darkest-hue), var(--color-shades-darkest-saturation), var(--color-shades-darkest-brightness), 1);
+
+  --color-heading-hue: 82;
+  --color-heading-saturation: 52%;
+  --color-heading-brightness: 28%;
+  --color-heading: hsla(var(--color-heading-hue), var(--color-heading-saturation), var(--color-heading-brightness), 1);
+  --color-heading-background: hsla(var(--color-heading-hue), var(--color-heading-saturation), var(--color-heading-brightness), 0.2);
+
+  --navigation-background: var(--color-shades-lightest);
+  --navigation-color: var(--color-primary);
+  --navigation-active-background: var(--color-shades-lightest);
+  --navigation-active-color: var(--color-secondary);
+}

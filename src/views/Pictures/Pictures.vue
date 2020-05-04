@@ -1,8 +1,12 @@
 <template>
-  <div>
-    <h1>Pictures</h1>
-    <router-link :to="{ name: 'List' }">List</router-link> |
-    <router-link :to="{ name: 'Details' }">Details</router-link>
+  <div class="-pictures">
+    <app-header/>
+    <main class="app__content">
+      <h1>Pictures</h1>
+      <router-link :to="{ name: 'List' }">List</router-link> |
+      <router-link :to="{ name: 'Details' }">Details</router-link>
+    </main>
+    <app-footer/>
   </div>
 </template>
 

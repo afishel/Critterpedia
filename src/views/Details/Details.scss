@@ -1,0 +1,278 @@
+.page.-details {
+  .app__header,
+  .app__footer {
+    border: none;
+  }
+
+  .app__content {
+    margin-top: calc((var(--header-height) - var(--gutter)) * -1);
+    margin-bottom: calc((var(--footer-height) - var(--gutter)) * -1);
+  }
+
+  .navigate__action {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 5em;
+    line-height: 1;
+    color: var(--color-primary);
+
+    &.-prev {
+      left: 0;
+    }
+
+    &.-next {
+      right: 0;
+    }
+  }
+
+  &.-insect {
+    .critter__details {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 2fr 0.5fr 0.5fr;
+      grid-template-areas:
+        "display activity"
+        "display location"
+        "display price";
+
+      .tag__container {
+        bottom: calc(var(--gutter) * 2);
+      }
+    }
+
+    .display {
+      align-items: flex-start;
+    }
+
+    .activity {
+      flex-direction: column;
+    }
+  }
+
+  &.-fish {
+    .critter__details {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 2fr auto auto;
+      grid-template-areas:
+        "display display"
+        "activity activity"
+        "location price";
+
+      .tag__container {
+        top: var(--gutter);
+      }
+    }
+
+    .display {
+      align-items: flex-end;
+    }
+
+    .activity {
+      flex-direction: row;
+    }
+
+    .seasonality,
+    .hours {
+      margin: 0 var(--gutter);
+    }
+  }
+}
+
+.critter__details {
+  display: grid;
+  width: 100%;
+  max-width: 58em;
+  height: 100%;
+  margin: auto;
+
+  &,
+  > * {
+    border: 1px solid var(--color-primary-70);
+  }
+
+  .display {
+    display: flex;
+    grid-area: display;
+    justify-content: center;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: calc(100% - var(--header-height));
+      max-height: 100%;
+      object-fit: scale-down;
+    }
+
+    .tag__container {
+      position: absolute;
+    }
+  }
+
+  .activity {
+    display: flex;
+    grid-area: activity;
+    justify-content: space-evenly;
+    padding: var(--gutter);
+  }
+
+  .seasonality,
+  .hours {
+    flex: 1 1 auto;
+  }
+
+  .location {
+    display: flex;
+    grid-area: location;
+    align-items: center;
+    padding: var(--gutter);
+
+    h2 {
+      margin: 0;
+    }
+
+    span {
+      margin-left: var(--gutter);
+      font-size: 1.25em;
+      font-style: italic;
+      font-weight: 700;
+    }
+  }
+
+  .price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: price;
+  }
+
+  .bells {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.75em;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 2.75rem;
+      height: 2.75rem;
+      margin-right: 0.3em;
+      background: url('/img/bell.png');
+      background-size: cover;
+    }
+  }
+
+  .months {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0;
+    margin: 0;
+    border: 1px solid var(--color-primary-70);
+    list-style: none;
+  }
+
+  .month {
+    padding: 0.25em;
+    border: 1px solid var(--color-primary-70);
+    position: relative;
+    text-align: center;
+
+    span {
+      display: block;
+      padding: 0.3rem 0.5rem;
+      font-size: 1.75em;
+      font-style: italic;
+      font-weight: 700;
+    }
+
+    &.-active {
+      span {
+        border-radius: 0.25em;
+        background: #CDD30D;
+      }
+    }
+
+    &.-current {
+      &::before {
+        content: '';
+        width: calc(100% + 2px);
+        height: calc(100% + 2px);
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        border: 2px solid red;
+      }
+    }
+  }
+
+  .meter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 2em;
+    margin-top: calc(var(--gutter) * 1.5);
+    border-bottom: 2px solid #000;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 2px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: calc(var(--currentTime) * 100%);
+      z-index: 1;
+      background: red;
+      transform: translateX(-50%);
+    }
+  }
+
+  .hour {
+    width: 0;
+    height: 25%;
+    border-left: 1px solid #000;
+    position: relative;
+    z-index: 1;
+
+    &.-eighth {
+      height: 50%;
+    }
+
+    &.-quarter {
+      height: 100%;
+    }
+
+    .quarterHour {
+      position: absolute;
+      bottom: 100%;
+      left: -0.3em;
+      font-weight: 700;
+      line-height: 1;
+    }
+  }
+
+  .activeTime {
+    $hour: percentage(1 / 24);
+    $i: 0;
+
+    width: 100%;
+    height: calc(100% - 0.5em);
+    position: absolute;
+    bottom: 0.25em;
+    border-radius: 1em;
+    background: #CDD30D;
+
+    @while $i < 25 {
+      &.start-#{$i * 100} {
+        left: #{$hour * $i};
+      }
+
+      &.span-#{$i * 100} {
+        width: #{$hour * $i};
+      }
+
+      $i: $i + 1;
+    }
+  }
+}

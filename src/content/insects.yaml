@@ -1,0 +1,621 @@
+- name: Common Butterfly
+  price: 160
+  location: Flying
+  time:
+    - [400, 1900]
+  months:
+    - [1, 2, 3, 4, 5, 6, 9, 10, 11, 12]
+    - [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+- name: Yellow Butterfly
+  price: 160
+  location: Flying
+  time:
+    - [400, 1900]
+  months:
+    - [3, 4, 5, 6, 9, 10]
+    - [3, 4, 9, 10, 11, 12]
+- name: Tiger Butterfly
+  price: 240
+  location: Flying
+  time:
+    - [400, 1900]
+  months:
+    - [3, 4, 5, 6, 7, 8, 9]
+    - [1, 2, 3, 9, 10, 11, 12]
+- name: Peacock Butterfly
+  price: 2500
+  location: Flying by hybrid flowers
+  time:
+    - [400, 1900]
+  months:
+    - [3, 4, 5, 6]
+    - [9, 10, 11, 12]
+- name: Common Bluebottle
+  price: 300
+  location: Flying
+  time:
+    - [400, 1900]
+  months:
+    - [4, 5, 6, 7, 8]
+    - [1, 2, 10, 11, 12]
+- name: Paper Kite Butterfly
+  price: 1000
+  location: Flying
+  time:
+    - [800, 1900]
+  months: -1
+- name: Great Purple Emperor
+  price: 3000
+  location: Flying
+  time:
+    - [400, 1900]
+  months:
+    - [5, 6, 7, 8]
+    - [1, 2, 11, 12]
+- name: Monarch Butterfly
+  price: 140
+  location: Flying
+  time:
+    - [400, 1700]
+  months:
+    - [9, 10, 11]
+    - [3, 4, 5]
+- name: Emperor Butterfly
+  price: 4000
+  location: Flying
+  time:
+    - [0, 800]
+    - [1700, 2400]
+  months:
+    - [1, 2, 3, 6, 7, 8, 9, 12]
+    - [1, 2, 3, 6, 7, 8, 9, 12]
+- name: Agrias Butterfly
+  price: 3000
+  location: Flying
+  time:
+    - [800, 1700]
+  months:
+    - [4, 5, 6, 7, 8, 9]
+    - [1, 2, 3, 10, 11, 12]
+- name: Raja Booke's Birdwing
+  price: 2500
+  location: Flying
+  time:
+    - [800, 1700]
+  months:
+    - [1, 2, 4, 5, 6, 7, 8, 9, 12]
+    - [1, 2, 3, 6, 7, 8, 10, 11, 12]
+- name: Queen Alexandra's Birdwing
+  price: 4000
+  location: Flying
+  time:
+    - [800, 1600]
+  months:
+    - [5, 6, 7, 8, 9]
+    - [1, 2, 3, 11, 12]
+- name: Moth
+  price: 130
+  location: Flying by light
+  time:
+    - [0, 400]
+    - [1900, 2400]
+  months: -1
+- name: Atlas Moth
+  price: 3000
+  location: On trees
+  time:
+    - [0, 400]
+    - [1900, 2400]
+  months:
+    - [4, 5, 6, 7, 8, 9]
+    - [1, 2, 3, 10, 11, 12]
+- name: Madagascan Sunset Moth
+  price: 2500
+  location: Flying
+  time:
+    - [800, 1600]
+  months:
+    - [4, 5, 6, 7, 8, 9]
+    - [1, 2, 3, 10, 11, 12]
+- name: Long Locust
+  price: 200
+  location: On the ground
+  time:
+    - [800, 1900]
+  months:
+    - [4, 5, 6, 7, 8, 9, 10, 11]
+    - [1, 2, 3, 4, 5, 10, 11, 12]
+- name: Migratory Locust
+  price: 600
+  location: On the ground
+  time:
+    - [800, 1900]
+  months:
+    - [8, 9, 10, 11]
+    - [2, 3, 4, 5]
+- name: Rice Grasshopper
+  price: 160
+  location: On the ground
+  time:
+    - [800, 1900]
+  months:
+    - [8, 9, 10, 11]
+    - [2, 3, 4, 5]
+- name: Grasshopper
+  price: 160
+  location: On the ground
+  time:
+    - [800, 1700]
+  months:
+    - [7, 8, 9]
+    - [1, 2, 3]
+- name: Cricket
+  price: 130
+  location: On the ground
+  time:
+    - [0, 800]
+    - [1700, 2400]
+  months:
+    - [9, 10, 11]
+    - [3, 4, 5]
+- name: Bell Cricket
+  price: 430
+  location: On the ground
+  time:
+    - [0, 800]
+    - [1700, 2400]
+  months:
+    - [9, 10]
+    - [3, 4]
+- name: Mantis
+  price: 430
+  location: On flowers
+  time:
+    - [800, 1700]
+  months:
+    - [3, 4, 5, 6, 7, 8, 9, 10, 11]
+    - [1, 2, 3, 4, 5, 9, 10, 11, 12]
+- name: Orchid Mantis
+  price: 2400
+  location: On white flowers
+  time:
+    - [800, 1700]
+  months:
+    - [3, 4, 5, 6, 7, 8, 9, 10, 11]
+    - [1, 2, 3, 4, 5, 9, 10, 11, 12]
+- name: Honeybee
+  price: 200
+  location: Flying
+  time:
+    - [800, 1700]
+  months:
+    - [3, 4, 5, 6, 7]
+    - [1, 9, 10, 11, 12]
+- name: Wasp
+  price: 2500
+  location: Shaking trees
+  time: -1
+  months: -1
+- name: Brown Cicada
+  price: 250
+  location: On trees
+  time:
+    - [800, 1700]
+  months:
+    - [7, 8]
+    - [1, 2]
+- name: Robust Cicada
+  price: 300
+  location: On trees
+  time:
+    - [800, 1700]
+  months:
+    - [7, 8]
+    - [1, 2]
+- name: Giant Cicada
+  price: 500
+  location: On trees
+  time:
+    - [800, 1700]
+  months:
+    - [7, 8]
+    - [1, 2]
+- name: Walker Cicada
+  price: 500
+  location: On trees
+  time:
+    - [800, 1700]
+  months:
+    - [8, 9]
+    - [2, 3]
+- name: Evening Cicada
+  price: 550
+  location: On trees
+  time:
+    - [400, 800]
+    - [1600, 1900]
+  months:
+    - [7, 8]
+    - [1, 2]
+- name: Cicada Shell
+  price: 10
+  location: On trees
+  time: -1
+  months:
+    - [7, 8]
+    - [1, 2]
+- name: Red Dragonfly
+  price: 180
+  location: Flying
+  time:
+    - [800, 1900]
+  months:
+    - [9, 10]
+    - [3, 4]
+- name: Darner Dragonfly
+  price: 230
+  location: Flying
+  time:
+    - [800, 1700]
+  months:
+    - [4, 5, 6, 7, 8, 9, 10]
+    - [1, 2, 3, 4, 10, 11, 12]
+- name: Banded Dragonfly
+  price: 4500
+  location: Flying
+  time:
+    - [800, 1700]
+  months:
+    - [5, 6, 7, 8, 9, 10]
+    - [1, 2, 3, 4, 11, 12]
+- name: Damselfly
+  price: 500
+  location: Flying
+  time: -1
+  months:
+    - [1, 2, 11, 12]
+    - [5, 6, 7, 8]
+- name: Firefly
+  price: 300
+  location: Flying
+  time:
+    - [0, 400]
+    - [1900, 2400]
+  months:
+    - [6]
+    - [12]
+- name: Mole Cricket
+  price: 500
+  location: Underground
+  time: -1
+  months:
+    - [1, 2, 3, 4, 5, 11, 12]
+    - [5, 6, 7, 8, 9, 10, 11]
+- name: Pondskater
+  price: 130
+  location: Ponds and rivers
+  time:
+    - [800, 1900]
+  months:
+    - [5, 6, 7, 8, 9]
+    - [1, 2, 3, 11, 12]
+- name: Diving Beetle
+  price: 800
+  location: Ponds and rivers
+  time:
+    - [800, 1900]
+  months:
+    - [5, 6, 7, 8, 9]
+    - [1, 2, 3, 11, 12]
+- name: Giant Water Bug
+  price: 2000
+  location: Ponds and rivers
+  time:
+    - [0, 800]
+    - [1900, 2400]
+  months:
+    - [4, 5, 6, 7, 8, 9]
+    - [1, 2, 3, 10, 11, 12]
+- name: Stinkbug
+  price: 120
+  location: On flowers
+  time: -1
+  months:
+    - [3, 4, 5, 6, 7, 8, 9, 10]
+    - [1, 2, 3, 4, 9, 10, 11, 12]
+- name: Man-faced Stink Bug
+  price: 1000
+  location: On flowers
+  time:
+    - [0, 800]
+    - [1900, 2400]
+  months:
+    - [3, 4, 5, 6, 7, 8, 9, 10]
+    - [1, 2, 3, 4, 9, 10, 11, 12]
+- name: Ladybug
+  price: 200
+  location: On flowers
+  time:
+    - [800, 1900]
+  months:
+    - [3, 4, 5, 6, 10]
+    - [4, 9, 10, 11, 12]
+- name: Tiger Beetle
+  price: 1500
+  location: On the ground
+  time: -1
+  months:
+    - [2, 3, 4, 5, 6, 7, 8, 9, 10]
+    - [1, 2, 3, 4, 8, 9, 10, 11, 12]
+- name: Jewel Beetle
+  price: 2400
+  location: On tree stumps
+  time: -1
+  months:
+    - [4, 5, 6, 7, 8]
+    - [1, 2, 10, 11, 12]
+- name: Violin Beetle
+  price: 450
+  location: On tree stumps
+  time: -1
+  months:
+    - [5, 6, 9, 10, 11]
+    - [3, 4, 5, 11, 12]
+- name: Citrus Long-horned Beetle
+  price: 350
+  location: On tree stumps
+  time: -1
+  months: -1
+- name: Rosalia Batesi Beetle
+  price: 3000
+  location: On tree stumps
+  time: -1
+  months:
+    - [5, 6, 7, 8, 9]
+    - [1, 2, 3, 11, 12]
+- name: Blue Weevil Beetle
+  price: 800
+  location: On trees
+  time: -1
+  months:
+    - [7, 8]
+    - [1, 2]
+- name: Dung Beetle
+  price: 3000
+  location: On the ground
+  time: -1
+  months:
+    - [1, 2, 12]
+    - [6, 7, 8]
+- name: Earth-boring Dung Beetle
+  price: 300
+  location: On the ground
+  time: -1
+  months:
+    - [7, 8, 9]
+    - [1, 2, 3]
+- name: Scarab Beetle
+  price: 10000
+  location: On trees
+  time:
+    - [0, 800]
+    - [2300, 2400]
+  months:
+    - [7, 8]
+    - [1, 2]
+- name: Drone Beetle
+  price: 200
+  location: On trees
+  time: -1
+  months:
+    - [6, 7, 8]
+    - [1, 2, 12]
+- name: Goliath Beetle
+  price: 8000
+  location: On coconut trees
+  time:
+    - [0, 800]
+    - [1700, 2400]
+  months:
+    - [6, 7, 8, 9]
+    - [1, 2, 3, 12]
+- name: Saw Stag
+  price: 2000
+  location: On trees
+  time: -1
+  months:
+    - [7, 8]
+    - [1, 2]
+- name: Miyama Stag
+  price: 1000
+  location: On trees
+  time: -1
+  months:
+    - [7, 8]
+    - [1, 2]
+- name: Giant Stag
+  price: 10000
+  location: On trees
+  time:
+    - [0, 800]
+    - [2300, 2400]
+  months:
+    - [7, 8]
+    - [1, 2]
+- name: Rainbow Stag
+  price: 6000
+  location: On trees
+  time:
+    - [0, 800]
+    - [1900, 2400]
+  months:
+    - [6, 7, 8, 9]
+    - [1, 2, 3, 12]
+- name: Cyclommatus Stag
+  price: 8000
+  location: On cocunut trees
+  time:
+    - [0, 800]
+    - [1700, 2400]
+  months:
+    - [7, 8]
+    - [1, 2]
+- name: Golden Stag
+  price: 12000
+  location: On cocunut trees
+  time:
+    - [0, 800]
+    - [1700, 2400]
+  months:
+    - [7, 8]
+    - [1, 2]
+- name: Giraffe Stag
+  price: 12000
+  location: On cocunut trees
+  time:
+    - [0, 800]
+    - [1700, 2400]
+  months:
+    - [7, 8]
+    - [1, 2]
+- name: Horned Dynastid
+  price: 1350
+  location: On trees
+  time:
+    - [0, 800]
+    - [1700, 2400]
+  months:
+    - [7, 8]
+    - [1, 2]
+- name: Horned Atlas
+  price: 8000
+  location: On cocunut trees
+  time:
+    - [0, 800]
+    - [1700, 2400]
+  months:
+    - [7, 8]
+    - [1, 2]
+- name: Horned Elephant
+  price: 8000
+  location: On cocunut trees
+  time:
+    - [0, 800]
+    - [1700, 2400]
+  months:
+    - [7, 8]
+    - [1, 2]
+- name: Horned Hercules
+  price: 12000
+  location: On cocunut trees
+  time:
+    - [0, 800]
+    - [1700, 2400]
+  months:
+    - [7, 8]
+    - [1, 2]
+- name: Walking Stick
+  price: 600
+  location: On trees
+  time:
+    - [400, 800]
+    - [1700, 1900]
+  months:
+    - [7, 8, 9, 10, 11]
+    - [1, 2, 3, 4, 5]
+- name: Walking Leaf
+  price: 600
+  location: Under trees
+  time: -1
+  months:
+    - [7, 8, 9]
+    - [1, 2, 3]
+- name: Bagworm
+  price: 600
+  location: Shaking trees
+  time: -1
+  months: -1
+- name: Ant
+  price: 80
+  location: On rotten food
+  time: -1
+  months: -1
+- name: Hermit Crab
+  price: 1000
+  location: On the beach
+  time:
+    - [0, 800]
+    - [1900, 2400]
+  months: -1
+- name: Wharf Roach
+  price: 200
+  location: On beach rocks
+  time: -1
+  months: -1
+- name: Fly
+  price: 60
+  location: On trash
+  time: -1
+  months: -1
+- name: Mosquito
+  price: 130
+  location: Flying
+  time:
+    - [0, 400]
+    - [1700, 2400]
+  months:
+    - [6, 7, 8, 9]
+    - [1, 2, 3, 12]
+- name: Flea
+  price: 70
+  location: On Villager's Heads
+  time: -1
+  months:
+    - [4, 5, 6, 7, 8, 9, 10, 11]
+    - [1, 2, 3, 4, 5, 10, 11, 12]
+- name: Snail
+  price: 250
+  location: On rocks and bushes (rain)
+  time: -1
+  months: -1
+- name: Pill Bug
+  price: 250
+  location: Hitting rocks
+  time:
+    - [1100, 1600]
+  months:
+    - [1, 2, 3, 4, 5, 6, 9, 10, 11, 12]
+    - [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+- name: Centipede
+  price: 300
+  location: Hitting rocks
+  time:
+    - [1600, 2300]
+  months:
+    - [1, 2, 3, 4, 5, 6, 9, 10, 11, 12]
+    - [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+- name: Spider
+  price: 600
+  location: Shaking trees
+  time:
+    - [0, 800]
+    - [1900, 2400]
+  months: -1
+- name: Tarantula
+  price: 8000
+  location: On the ground
+  time:
+    - [0, 400]
+    - [1900, 2400]
+  months:
+    - [1, 2, 3, 4, 11, 12]
+    - [5, 6, 7, 8, 9, 10]
+- name: Scorpion
+  price: 8000
+  location: On the ground
+  time:
+    - [0, 400]
+    - [1900, 2400]
+  months:
+    - [5, 6, 7, 8, 9, 10]
+    - [1, 2, 3, 4, 11, 12]
