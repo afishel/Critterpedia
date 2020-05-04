@@ -81,4 +81,33 @@ module.exports = {
   chainWebpack: (config) => {
     configSVGIcon(config);
   },
+  pwa: {
+    name: 'Critterpedia',
+    themeColor: '#f3cf62',
+    msTileColor: '#f3cf62',
+    appleMobileWebAppCapable: 'yes',
+    appleMobileWebAppStatusBarStyle: 'black-translucent',
+    // workboxPluginMode: 'InjectManifest',
+    // workboxOptions: {
+    //   swSrc: './service-worker.js',
+    // },
+    manifestOptions: {
+      icons: [{
+        src: './favicon/android-chrome-192x192.png',
+        sizes: '192x192',
+        type: 'image/png',
+      }, {
+        src: './favicon/android-chrome-256x256.png',
+        sizes: '256x256',
+        type: 'image/png',
+      }],
+    },
+    iconPaths: {
+      favicon32: 'favicon/favicon-32x32.png',
+      favicon16: 'favicon/favicon-16x16.png',
+      appleTouchIcon: 'favicon/apple-touch-icon.png',
+      maskIcon: 'favicon/safari-pinned-tab.svg',
+      msTileImage: 'favicon/mstile-150x150.png',
+    },
+  },
 };
