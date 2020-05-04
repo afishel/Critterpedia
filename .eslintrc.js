@@ -3,6 +3,9 @@ module.exports = {
   env: {
     node: true,
   },
+  globals: {
+    workbox: true,
+  },
   extends: [
     'plugin:vue/essential',
     '@vue/airbnb',

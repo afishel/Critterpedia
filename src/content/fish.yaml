@@ -460,6 +460,7 @@
 - name: Puffer Fish
   price: 250
   location: Sea
+  size: 3
   time: -1
   months:
     - [7, 8, 9]
@@ -467,6 +468,7 @@
 - name: Anchovy
   price: 200
   location: Sea
+  size: 2
   time:
     - [400, 2100]
   months: -1
